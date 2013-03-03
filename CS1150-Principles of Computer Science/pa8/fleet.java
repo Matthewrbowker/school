@@ -1,0 +1,62 @@
+/* fleet.java
+ * Matthew Bowker
+ * CS1150.1208-4, Programming Assignment #8
+ * Creates and manages fleet of cars, now stored in an array.
+ */
+
+public class fleet {
+private int numCars = 0;
+private Car[] cars = new Car[20];
+
+public void add(Car tempCar) {
+  cars[numCars + 1] = tempCar;
+  numCars++;
+  }
+  
+public void remove(Car tempCar) {
+  int index =0;
+  for (int sn = 0; sn < numCars; sn++) {
+    if (tempCar == cars[sn]) {
+      index = sn;
+      break;
+    }
+  }
+  cars[index] = cars[numCars];
+    numCars--;
+  }
+
+  public int size() {
+    return numCars;
+  }
+  
+    public String toString() {
+      int n = 0;
+      String mainstring = "";
+      mainstring = "There are currently " + size() + " car(s) in the fleet.";
+      while (n < numCars) {
+        n++;
+        if (cars[n] != null) {
+          mainstring = mainstring + "\n" + cars[n].toString(); 
+        }
+      }
+      return mainstring;
+  }
+  
+  public static void main(String args[]) {
+    final double DEFAULT_MPG = 23.0;
+    fleet myFleet = new fleet();
+    Car testCar = new Car();
+    Car testCar2 = new Car();
+    testCar.setAverageMPG(50.0);
+    testCar2.setAverageMPG(75.0);
+    myFleet.add(testCar);
+    System.out.println(myFleet.toString());
+    myFleet.add(testCar);
+    System.out.println(myFleet.toString());
+    myFleet.remove(testCar);
+    System.out.println(myFleet.toString());
+    myFleet.remove(testCar2);
+    System.out.println(myFleet.toString());
+    
+  }
+}
