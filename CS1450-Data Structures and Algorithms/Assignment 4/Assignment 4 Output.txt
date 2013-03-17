@@ -1,0 +1,632 @@
+run:
+Hello and welcome to Matthew's CD tracker, version 1.1devel1.  
+Please enter the number of CDs you will be tracking...
+5
+OK, what would you like to do?
+	1 - Add a new CD
+	2 - Delete a CD
+	3 - Sort your CDs by artist
+	4 - Sort your CDs by title
+	5 - Display your CDs
+	0 - Exit
+1
+All right, we're adding a CD...
+So, what is the title of the CD?
+Smoke & Mirrors
+OK, how about the artist?
+Lifehouse
+OK, now we're adding tracks.  Please enter the tracks one at a time, or enter "-999" to quit
+Track #1:
+All in
+Track #2:
+Nerve Damage
+Track #3:
+Had Enough
+Track #4:
+Halfway Gone
+Track #5:
+It is What it is
+Track #6:
+From where you are
+Track #7:
+Falling in
+Track #8:
+Wrecking Ball
+Track #9:
+Here Tomorrow Gone Today
+Track #10:
+By Your Side
+Track #11:
+In Your Skin
+Track #12:
+-999
+OK, what would you like to do?
+	1 - Add a new CD
+	2 - Delete a CD
+	3 - Sort your CDs by artist
+	4 - Sort your CDs by title
+	5 - Display your CDs
+	0 - Exit
+1
+All right, we're adding a CD...
+So, what is the title of the CD?
+Wow Hits 2008 [Disk 1]
+OK, how about the artist?
+Various Artists
+OK, now we're adding tracks.  Please enter the tracks one at a time, or enter "-999" to quit
+Track #1:
+Made to Worship
+Track #2:
+Mountain of God
+Track #3:
+Hold Fast
+Track #4:
+Praise You in this Storm
+Track #5:
+Undo
+Track #6:
+Awaken
+Track #7:
+Find Your Wings
+Track #8:
+By His Wounds
+Track #9:
+Every Time I Breathe
+Track #10:
+Walking Her Home
+Track #11:
+Over My Head
+Track #12:
+Come To The Cross
+Track #13:
+Give It All Away
+Track #14:
+Bless the Broken Road
+Track #15:
+History
+Track #16:
+-999
+OK, what would you like to do?
+	1 - Add a new CD
+	2 - Delete a CD
+	3 - Sort your CDs by artist
+	4 - Sort your CDs by title
+	5 - Display your CDs
+	0 - Exit
+1
+All right, we're adding a CD...
+So, what is the title of the CD?
+Dark Passion Play
+OK, how about the artist?
+Nightwish
+OK, now we're adding tracks.  Please enter the tracks one at a time, or enter "-999" to quit
+Track #1:
+The Poet and the Pendulum
+Track #2:
+Bye Bye Beautiful
+Track #3:
+Amaranth
+Track #4:
+Cadence of Her Last Breath
+Track #5:
+Master Passion Greed
+Track #6:
+Eva
+Track #7:
+Sahara
+Track #8:
+Whoever Brings the Night
+Track #9:
+For The Heart I Once Had
+Track #10:
+The Islander
+Track #11:
+Last of the Wilds
+Track #12:
+Seven Days to the Wolves
+Track #13:
+Meadows of Heaven
+Track #14:
+Reach (Amaranth Demo Version)
+Track #15:
+-999
+OK, what would you like to do?
+	1 - Add a new CD
+	2 - Delete a CD
+	3 - Sort your CDs by artist
+	4 - Sort your CDs by title
+	5 - Display your CDs
+	0 - Exit
+1
+All right, we're adding a CD...
+So, what is the title of the CD?
+Imaginaerum
+OK, how about the artist?
+Nightwish
+OK, now we're adding tracks.  Please enter the tracks one at a time, or enter "-999" to quit
+Track #1:
+Taikatalvi
+Track #2:
+Storytime
+Track #3:
+Ghost River
+Track #4:
+Slow, Love, Slow
+Track #5:
+I Want My Tears Back
+Track #6:
+Scaretale
+Track #7:
+Arabesque
+Track #8:
+Turn Loose the Mermaids
+Track #9:
+Rest Calm
+Track #10:
+The Crow, the Owl, and the Dove
+Track #11:
+Last Ride of the Day
+Track #12:
+Song of Myself
+Track #13:
+Imaginaerum
+Track #14:
+-999
+OK, what would you like to do?
+	1 - Add a new CD
+	2 - Delete a CD
+	3 - Sort your CDs by artist
+	4 - Sort your CDs by title
+	5 - Display your CDs
+	0 - Exit
+1
+All right, we're adding a CD...
+So, what is the title of the CD?
+Alive and Transported
+OK, how about the artist?
+TobyMac
+OK, now we're adding tracks.  Please enter the tracks one at a time, or enter "-999" to quit
+Track #1:
+Intro
+Track #2:
+Ignition
+Track #3:
+Catchafire (Whoopsi-Daisy)
+Track #4:
+Boomin'
+Track #5:
+No Ordinary Love
+Track #6:
+J Train
+Track #7:
+Gone
+Track #8:
+Irene
+Track #9:
+I'm for You
+Track #10:
+In the Light
+Track #11:
+Yours
+Track #12:
+The Slam
+Track #13:
+Love is in the House
+Track #14:
+Atmosphere
+Track #15:
+Loose my Soul
+Track #16:
+Diverse City
+Track #17:
+Made to Love
+Track #18:
+Burn for You
+Track #19:
+Jesus Freak
+Track #20:
+Extreme Days
+Track #21:
+Outro
+Track #22:
+-999
+OK, what would you like to do?
+	1 - Add a new CD
+	2 - Delete a CD
+	3 - Sort your CDs by artist
+	4 - Sort your CDs by title
+	5 - Display your CDs
+	0 - Exit
+5
+---------- Displaying entire CD Library ----------
+"Smoke & Mirrors" By "Lifehouse":
+     1. All in
+     2. Nerve Damage
+     3. Had Enough
+     4. Halfway Gone
+     5. It is What it is
+     6. From where you are
+     7. Falling in
+     8. Wrecking Ball
+     9. Here Tomorrow Gone Today
+     10. By Your Side
+     11. In Your Skin
+
+"Wow Hits 2008 [Disk 1]" By "Various Artists":
+     1. Made to Worship
+     2. Mountain of God
+     3. Hold Fast
+     4. Praise You in this Storm
+     5. Undo
+     6. Awaken
+     7. Find Your Wings
+     8. By His Wounds
+     9. Every Time I Breathe
+     10. Walking Her Home
+     11. Over My Head
+     12. Come To The Cross
+     13. Give It All Away
+     14. Bless the Broken Road
+     15. History
+
+"Dark Passion Play" By "Nightwish":
+     1. The Poet and the Pendulum
+     2. Bye Bye Beautiful
+     3. Amaranth
+     4. Cadence of Her Last Breath
+     5. Master Passion Greed
+     6. Eva
+     7. Sahara
+     8. Whoever Brings the Night
+     9. For The Heart I Once Had
+     10. The Islander
+     11. Last of the Wilds
+     12. Seven Days to the Wolves
+     13. Meadows of Heaven
+     14. Reach (Amaranth Demo Version)
+
+"Imaginaerum" By "Nightwish":
+     1. Taikatalvi
+     2. Storytime
+     3. Ghost River
+     4. Slow, Love, Slow
+     5. I Want My Tears Back
+     6. Scaretale
+     7. Arabesque
+     8. Turn Loose the Mermaids
+     9. Rest Calm
+     10. The Crow, the Owl, and the Dove
+     11. Last Ride of the Day
+     12. Song of Myself
+     13. Imaginaerum
+
+"Alive and Transported" By "TobyMac":
+     1. Intro
+     2. Ignition
+     3. Catchafire (Whoopsi-Daisy)
+     4. Boomin'
+     5. No Ordinary Love
+     6. J Train
+     7. Gone
+     8. Irene
+     9. I'm for You
+     10. In the Light
+     11. Yours
+     12. The Slam
+     13. Love is in the House
+     14. Atmosphere
+     15. Loose my Soul
+     16. Diverse City
+     17. Made to Love
+     18. Burn for You
+     19. Jesus Freak
+     20. Extreme Days
+     21. Outro
+
+---------- End of CD Library ----------
+---------- Total: 5 CDs ----------
+OK, what would you like to do?
+	1 - Add a new CD
+	2 - Delete a CD
+	3 - Sort your CDs by artist
+	4 - Sort your CDs by title
+	5 - Display your CDs
+	0 - Exit
+3
+OK, sorting by artist...
+... Done!
+OK, what would you like to do?
+	1 - Add a new CD
+	2 - Delete a CD
+	3 - Sort your CDs by artist
+	4 - Sort your CDs by title
+	5 - Display your CDs
+	0 - Exit
+5
+---------- Displaying entire CD Library ----------
+"Smoke & Mirrors" By "Lifehouse":
+     1. All in
+     2. Nerve Damage
+     3. Had Enough
+     4. Halfway Gone
+     5. It is What it is
+     6. From where you are
+     7. Falling in
+     8. Wrecking Ball
+     9. Here Tomorrow Gone Today
+     10. By Your Side
+     11. In Your Skin
+
+"Dark Passion Play" By "Nightwish":
+     1. The Poet and the Pendulum
+     2. Bye Bye Beautiful
+     3. Amaranth
+     4. Cadence of Her Last Breath
+     5. Master Passion Greed
+     6. Eva
+     7. Sahara
+     8. Whoever Brings the Night
+     9. For The Heart I Once Had
+     10. The Islander
+     11. Last of the Wilds
+     12. Seven Days to the Wolves
+     13. Meadows of Heaven
+     14. Reach (Amaranth Demo Version)
+
+"Imaginaerum" By "Nightwish":
+     1. Taikatalvi
+     2. Storytime
+     3. Ghost River
+     4. Slow, Love, Slow
+     5. I Want My Tears Back
+     6. Scaretale
+     7. Arabesque
+     8. Turn Loose the Mermaids
+     9. Rest Calm
+     10. The Crow, the Owl, and the Dove
+     11. Last Ride of the Day
+     12. Song of Myself
+     13. Imaginaerum
+
+"Alive and Transported" By "TobyMac":
+     1. Intro
+     2. Ignition
+     3. Catchafire (Whoopsi-Daisy)
+     4. Boomin'
+     5. No Ordinary Love
+     6. J Train
+     7. Gone
+     8. Irene
+     9. I'm for You
+     10. In the Light
+     11. Yours
+     12. The Slam
+     13. Love is in the House
+     14. Atmosphere
+     15. Loose my Soul
+     16. Diverse City
+     17. Made to Love
+     18. Burn for You
+     19. Jesus Freak
+     20. Extreme Days
+     21. Outro
+
+"Wow Hits 2008 [Disk 1]" By "Various Artists":
+     1. Made to Worship
+     2. Mountain of God
+     3. Hold Fast
+     4. Praise You in this Storm
+     5. Undo
+     6. Awaken
+     7. Find Your Wings
+     8. By His Wounds
+     9. Every Time I Breathe
+     10. Walking Her Home
+     11. Over My Head
+     12. Come To The Cross
+     13. Give It All Away
+     14. Bless the Broken Road
+     15. History
+
+---------- End of CD Library ----------
+---------- Total: 5 CDs ----------
+OK, what would you like to do?
+	1 - Add a new CD
+	2 - Delete a CD
+	3 - Sort your CDs by artist
+	4 - Sort your CDs by title
+	5 - Display your CDs
+	0 - Exit
+4
+OK, sorting by title...
+... Done!
+OK, what would you like to do?
+	1 - Add a new CD
+	2 - Delete a CD
+	3 - Sort your CDs by artist
+	4 - Sort your CDs by title
+	5 - Display your CDs
+	0 - Exit
+5
+---------- Displaying entire CD Library ----------
+"Alive and Transported" By "TobyMac":
+     1. Intro
+     2. Ignition
+     3. Catchafire (Whoopsi-Daisy)
+     4. Boomin'
+     5. No Ordinary Love
+     6. J Train
+     7. Gone
+     8. Irene
+     9. I'm for You
+     10. In the Light
+     11. Yours
+     12. The Slam
+     13. Love is in the House
+     14. Atmosphere
+     15. Loose my Soul
+     16. Diverse City
+     17. Made to Love
+     18. Burn for You
+     19. Jesus Freak
+     20. Extreme Days
+     21. Outro
+
+"Dark Passion Play" By "Nightwish":
+     1. The Poet and the Pendulum
+     2. Bye Bye Beautiful
+     3. Amaranth
+     4. Cadence of Her Last Breath
+     5. Master Passion Greed
+     6. Eva
+     7. Sahara
+     8. Whoever Brings the Night
+     9. For The Heart I Once Had
+     10. The Islander
+     11. Last of the Wilds
+     12. Seven Days to the Wolves
+     13. Meadows of Heaven
+     14. Reach (Amaranth Demo Version)
+
+"Imaginaerum" By "Nightwish":
+     1. Taikatalvi
+     2. Storytime
+     3. Ghost River
+     4. Slow, Love, Slow
+     5. I Want My Tears Back
+     6. Scaretale
+     7. Arabesque
+     8. Turn Loose the Mermaids
+     9. Rest Calm
+     10. The Crow, the Owl, and the Dove
+     11. Last Ride of the Day
+     12. Song of Myself
+     13. Imaginaerum
+
+"Smoke & Mirrors" By "Lifehouse":
+     1. All in
+     2. Nerve Damage
+     3. Had Enough
+     4. Halfway Gone
+     5. It is What it is
+     6. From where you are
+     7. Falling in
+     8. Wrecking Ball
+     9. Here Tomorrow Gone Today
+     10. By Your Side
+     11. In Your Skin
+
+"Wow Hits 2008 [Disk 1]" By "Various Artists":
+     1. Made to Worship
+     2. Mountain of God
+     3. Hold Fast
+     4. Praise You in this Storm
+     5. Undo
+     6. Awaken
+     7. Find Your Wings
+     8. By His Wounds
+     9. Every Time I Breathe
+     10. Walking Her Home
+     11. Over My Head
+     12. Come To The Cross
+     13. Give It All Away
+     14. Bless the Broken Road
+     15. History
+
+---------- End of CD Library ----------
+---------- Total: 5 CDs ----------
+OK, what would you like to do?
+	1 - Add a new CD
+	2 - Delete a CD
+	3 - Sort your CDs by artist
+	4 - Sort your CDs by title
+	5 - Display your CDs
+	0 - Exit
+2
+OK, what is the title you would like to delete?
+Alive and Transported
+And the artist?
+TobyMac
+...Deleted!
+OK, what would you like to do?
+	1 - Add a new CD
+	2 - Delete a CD
+	3 - Sort your CDs by artist
+	4 - Sort your CDs by title
+	5 - Display your CDs
+	0 - Exit
+5
+---------- Displaying entire CD Library ----------
+"Imaginaerum" By "Nightwish":
+     1. Taikatalvi
+     2. Storytime
+     3. Ghost River
+     4. Slow, Love, Slow
+     5. I Want My Tears Back
+     6. Scaretale
+     7. Arabesque
+     8. Turn Loose the Mermaids
+     9. Rest Calm
+     10. The Crow, the Owl, and the Dove
+     11. Last Ride of the Day
+     12. Song of Myself
+     13. Imaginaerum
+
+"Dark Passion Play" By "Nightwish":
+     1. The Poet and the Pendulum
+     2. Bye Bye Beautiful
+     3. Amaranth
+     4. Cadence of Her Last Breath
+     5. Master Passion Greed
+     6. Eva
+     7. Sahara
+     8. Whoever Brings the Night
+     9. For The Heart I Once Had
+     10. The Islander
+     11. Last of the Wilds
+     12. Seven Days to the Wolves
+     13. Meadows of Heaven
+     14. Reach (Amaranth Demo Version)
+
+"Smoke & Mirrors" By "Lifehouse":
+     1. All in
+     2. Nerve Damage
+     3. Had Enough
+     4. Halfway Gone
+     5. It is What it is
+     6. From where you are
+     7. Falling in
+     8. Wrecking Ball
+     9. Here Tomorrow Gone Today
+     10. By Your Side
+     11. In Your Skin
+
+"Wow Hits 2008 [Disk 1]" By "Various Artists":
+     1. Made to Worship
+     2. Mountain of God
+     3. Hold Fast
+     4. Praise You in this Storm
+     5. Undo
+     6. Awaken
+     7. Find Your Wings
+     8. By His Wounds
+     9. Every Time I Breathe
+     10. Walking Her Home
+     11. Over My Head
+     12. Come To The Cross
+     13. Give It All Away
+     14. Bless the Broken Road
+     15. History
+
+---------- End of CD Library ----------
+---------- Total: 4 CDs ----------
+OK, what would you like to do?
+	1 - Add a new CD
+	2 - Delete a CD
+	3 - Sort your CDs by artist
+	4 - Sort your CDs by title
+	5 - Display your CDs
+	0 - Exit
+0
+Thank you for using the CD tracker!
+BUILD SUCCESSFUL (total time: 8 minutes 56 seconds)
