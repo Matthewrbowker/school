@@ -1,0 +1,53 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+<title>BTNode.java</title>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<style type="text/css">
+<!--
+body {color: #000000; background-color: #ffffff; font-family: Monospaced}
+pre {color: #000000; background-color: #ffffff; font-family: Monospaced}
+table {color: #000000; background-color: #e9e8e2; font-family: Monospaced}
+.ST0 {font-family: Monospaced; font-weight: bold}
+.comment {color: #969696}
+.ST1 {color: #009900}
+.keyword-directive {color: #0000e6}
+-->
+</style>
+</head>
+<body>
+<table width="100%"><tr><td align="center">/Users/matthewrbowker/Documents/School/DSA/Assignments/Assignment 7/Assignment 7/src/BTNode.java</td></tr></table>
+<pre>
+ 1 <span class="comment">/*</span>
+ 2 <span class="comment"> * Matthew Bowker</span>
+ 3 <span class="comment"> * CS 1450-002</span>
+ 4 <span class="comment"> * Assignment #7</span>
+ 5 <span class="comment"> * Node class for the Binary Seach Tree</span>
+ 6 <span class="comment"> */</span>
+ 7 
+ 8 <span class="keyword-directive">public</span> <span class="keyword-directive">class</span> <span class="ST0">BTNode</span> {
+ 9     <span class="keyword-directive">public</span> String <span class="ST1">nodeData</span>;     <span class="comment">// The data of the node.</span>
+10     <span class="keyword-directive">public</span> <span class="keyword-directive">int</span> <span class="ST1">nodeCount</span>;       <span class="comment">// The number of times the word appears.</span>
+11     <span class="keyword-directive">public</span> BTNode <span class="ST1">left</span>, <span class="ST1">right</span>;  <span class="comment">// Pointers to the next node.</span>
+12     
+13     <span class="keyword-directive">public</span> <span class="ST0">BTNode</span>(String data){
+14         <span class="comment">// Constructor method - initializes variables.</span>
+15         <span class="comment">// String input.</span>
+16         
+17         <span class="comment">// Initialize the variables.</span>
+18         <span class="ST1">nodeData</span> = data;
+19         <span class="ST1">nodeCount</span> = 1;
+20         <span class="ST1">left</span> = <span class="keyword-directive">null</span>;
+21         <span class="ST1">right</span> = <span class="keyword-directive">null</span>;
+22     }
+23     
+24     <span class="keyword-directive">public</span> <span class="keyword-directive">void</span> <span class="ST0">increment</span>() {
+25         <span class="comment">// Incrementor method for nodeCount.</span>
+26         <span class="comment">// No input, no output.</span>
+27         <span class="ST1">nodeCount</span>++;
+28     }
+29     
+30 }
+31 
+</pre></body>
+</html>

@@ -1,0 +1,263 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+<title>Assignment6.java</title>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<style type="text/css">
+<!--
+body {color: #000000; background-color: #ffffff; font-family: Monospaced}
+pre {color: #000000; background-color: #ffffff; font-family: Monospaced}
+table {color: #000000; background-color: #e9e8e2; font-family: Monospaced}
+.ST4 {font-family: Monospaced; font-weight: bold; font-style: italic}
+.ST5 {font-family: Monospaced; font-style: italic}
+.ST0 {font-family: Monospaced; font-weight: bold}
+.comment {color: #969696}
+.ST3 {color: #ce7b00; font-family: Monospaced; font-weight: bold}
+.ST1 {color: #009900}
+.character {color: #ce7b00}
+.ST2 {color: #009900; font-family: Monospaced; font-style: italic}
+.keyword-directive {color: #0000e6}
+-->
+</style>
+</head>
+<body>
+<table width="100%"><tr><td align="center">/Users/matthewrbowker/Documents/School/DSA/Assignments/Assignment 6/Assignment 6/src/Assignment6.java</td></tr></table>
+<pre>
+  1 <span class="comment">/*</span>
+  2 <span class="comment"> * Matthew Bowker</span>
+  3 <span class="comment"> * CS 1450-002</span>
+  4 <span class="comment"> * Assignment #6</span>
+  5 <span class="comment"> * Class for managing Crazy Eddie&#39;sre Park and Save Valet Service</span>
+  6 <span class="comment"> * </span>
+  7 <span class="comment"> * All other classes mentioned in this code are exactly duplicate from </span>
+  8 <span class="comment"> * Assignment 5.</span>
+  9 <span class="comment"> */</span>
+ 10 
+ 11 <span class="keyword-directive">public</span> <span class="keyword-directive">class</span> <span class="ST0">Assignment6</span> {
+ 12     <span class="keyword-directive">public</span> <span class="keyword-directive">int</span> <span class="ST1">numTurnedAway</span>;   <span class="comment">// Number of cars that have been turned away</span>
+ 13     <span class="keyword-directive">public</span> Lstack <span class="ST1">driveway</span>;     <span class="comment">// The Lstack that is our driveway</span>
+ 14     <span class="keyword-directive">public</span> Lqueue <span class="ST1">alley</span>;        <span class="comment">// the Lqueue that is our alley</span>
+ 15     
+ 16     
+ 17     <span class="keyword-directive">public</span> <span class="ST0">Assignment6</span>() {
+ 18         <span class="comment">// Contructor - sets all of our variables</span>
+ 19         <span class="comment">// No imput, no output.  </span>
+ 20         
+ 21         <span class="comment">// Number of cars turned away.  Using 0 so we don&#39;t overflow on </span>
+ 22         <span class="comment">// the first iteration</span>
+ 23         <span class="ST1">numTurnedAway</span>=0;
+ 24         
+ 25         <span class="ST1">alley</span> = <span class="keyword-directive">new</span> Lqueue();    <span class="comment">// Create the Lqueue</span>
+ 26         <span class="ST1">driveway</span> = <span class="keyword-directive">new</span> Lstack(); <span class="comment">// Create the Lstack</span>
+ 27         
+ 28     }
+ 29     
+ 30     
+ 31     <span class="keyword-directive">public</span> <span class="keyword-directive">void</span> <span class="ST0">addCar</span>(String tag) {
+ 32         <span class="comment">// Method to add the cars to the proper places</span>
+ 33         <span class="comment">// string input, console output.  </span>
+ 34         
+ 35         car tempCar = <span class="keyword-directive">new</span> car(tag);    <span class="comment">// Temporary car - added to wherever</span>
+ 36         
+ 37         <span class="keyword-directive">if</span> (<span class="ST1">alley</span>.size() &lt; 6) {
+ 38             <span class="comment">// If our alley isn&#39;t full...</span>
+ 39             
+ 40             tempCar.setActionCode(<span class="character">&#39;</span><span class="character">A</span><span class="character">&#39;</span>);  <span class="comment">//Set the action code of the car</span>
+ 41             <span class="ST1">alley</span>.insert(tempCar);       <span class="comment">// Add the car to the alley</span>
+ 42             
+ 43             <span class="comment">// Print some user output</span>
+ 44             System.<span class="ST2">out</span>.println(<span class="character">&quot;</span><span class="character">Car #</span><span class="character">&quot;</span> + tag + <span class="character">&quot;</span><span class="character"> added to the alley.</span><span class="character">&quot;</span>);
+ 45         }
+ 46         <span class="keyword-directive">else</span> <span class="keyword-directive">if</span> (<span class="ST1">driveway</span>.size() &lt; 3) {
+ 47             <span class="comment">// If our alley is full but the driveway isn&#39;t...</span>
+ 48             
+ 49             tempCar.setActionCode(<span class="character">&#39;</span><span class="character">B</span><span class="character">&#39;</span>);  <span class="comment">// Set the action code of the car</span>
+ 50             <span class="ST1">driveway</span>.push(tempCar);      <span class="comment">// Add the car to the driveway</span>
+ 51             
+ 52             <span class="comment">// Print some user output</span>
+ 53             System.<span class="ST2">out</span>.println(<span class="character">&quot;</span><span class="character">Car #</span><span class="character">&quot;</span> + tag + <span class="character">&quot;</span><span class="character"> added to the driveway.</span><span class="character">&quot;</span>);
+ 54         }
+ 55         <span class="keyword-directive">else</span> {
+ 56             <span class="comment">// We&#39;re all full here... turning the car away</span>
+ 57             
+ 58             <span class="ST1">numTurnedAway</span>++;  <span class="comment">// Add one to the number of cars turned away</span>
+ 59             
+ 60             <span class="comment">// User output</span>
+ 61             System.<span class="ST2">out</span>.println(<span class="character">&quot;</span><span class="character">Car #</span><span class="character">&quot;</span> + tag + <span class="character">&quot;</span><span class="character"> turned away.</span><span class="character">&quot;</span>);
+ 62             System.<span class="ST2">out</span>.println(<span class="character">&quot;</span><span class="character">Now removing </span><span class="character">&quot;</span> + (<span class="ST1">numTurnedAway</span>+1) + <span class="character">&quot;</span><span class="character"> cars.</span><span class="character">&quot;</span>);
+ 63         }
+ 64     }
+ 65     
+ 66     
+ 67     <span class="keyword-directive">public</span> <span class="keyword-directive">void</span> <span class="ST0">removeCar</span>() {
+ 68         <span class="comment">// Method to systematically remove the cars that come in</span>
+ 69         <span class="comment">// No input, console output</span>
+ 70         
+ 71         <span class="keyword-directive">int</span> count;                  <span class="comment">// Counter variable for the loop</span>
+ 72         car tempCar;                <span class="comment">// temprary car, it&#39;s what was removed</span>
+ 73         String buffer = <span class="character">&quot;</span><span class="character">Removed:</span><span class="character">&quot;</span>; <span class="comment">// Buffer for display to the user</span>
+ 74         <span class="keyword-directive">boolean</span> display = <span class="keyword-directive">false</span>;    <span class="comment">// Should we display the buffer?</span>
+ 75         
+ 76         <span class="keyword-directive">for</span> (count = 0; count &lt; 1 + <span class="ST1">numTurnedAway</span>; count++) {
+ 77             <span class="comment">// Loop looks through, removes cars from the alley first</span>
+ 78             <span class="comment">// until we agree with eddie&#39;s demands</span>
+ 79             <span class="comment">// No input, console output</span>
+ 80             
+ 81             <span class="keyword-directive">if</span> (!<span class="ST1">alley</span>.isEmpty()) {
+ 82                 <span class="comment">// Remove cars from the alley first</span>
+ 83                 
+ 84                 <span class="comment">// Get a car out</span>
+ 85                 tempCar = <span class="ST1">alley</span>.remove();
+ 86                 
+ 87                 <span class="comment">// Add the tag to the string buffer</span>
+ 88                 buffer = buffer + <span class="character">&quot;</span><span class="character"> #</span><span class="character">&quot;</span> + tempCar.getTag();
+ 89                 
+ 90                 <span class="comment">// Hey, we did something!  We need to show the buffer.</span>
+ 91                 display = <span class="keyword-directive">true</span>;
+ 92             }
+ 93             <span class="keyword-directive">else</span> <span class="keyword-directive">if</span> (!<span class="ST1">driveway</span>.isEmpty()) {
+ 94                 <span class="comment">// Now removing cars from the driveway</span>
+ 95                 
+ 96                 <span class="comment">// Get the car out</span>
+ 97                 tempCar = <span class="ST1">driveway</span>.pop();
+ 98                 
+ 99                 <span class="comment">// Add the tag to the string buffer</span>
+100                 buffer = buffer + <span class="character">&quot;</span><span class="character"> #</span><span class="character">&quot;</span> + tempCar.getTag();
+101                 
+102                 <span class="comment">// We did something, display the buffer.</span>
+103                 display = <span class="keyword-directive">true</span>;
+104             }
+105             <span class="keyword-directive">else</span> {
+106                 <span class="comment">// Do nothing ...  there&#39;s nothing to remove!</span>
+107             }
+108         }
+109         
+110         <span class="keyword-directive">if</span> (<span class="ST1">alley</span>.isEmpty() &amp;&amp; <span class="ST1">driveway</span>.isEmpty()) {
+111             <span class="comment">// If we emptied both the alley and the driveway, Eddie calms</span>
+112             <span class="comment">// down a little bit.  So, let&#39;s remove one less car next time.</span>
+113             
+114             <span class="ST1">numTurnedAway</span>--; <span class="comment">// Decriment the number</span>
+115             
+116             <span class="comment">// Display the new number to the user</span>
+117             System.<span class="ST2">out</span>.println(<span class="character">&quot;</span><span class="character">Now removing </span><span class="character">&quot;</span> + (<span class="ST1">numTurnedAway</span>+1) + <span class="character">&quot;</span><span class="character"> cars.</span><span class="character">&quot;</span>);
+118         }
+119         
+120         <span class="keyword-directive">if</span> (display) {
+121             <span class="comment">// If we did something, display the text buffer</span>
+122             System.<span class="ST2">out</span>.println(buffer);
+123         }
+124         
+125         <span class="comment">// Print out our new stack and queue.</span>
+126         displayCars();
+127     }
+128     
+129     
+130     <span class="keyword-directive">public</span> <span class="keyword-directive">void</span> <span class="ST0">displayCars</span>() {
+131         <span class="comment">// Function that displays the contents of the alley and driveway</span>
+132         
+133         <span class="keyword-directive">if</span>(!<span class="ST1">alley</span>.isEmpty()) { 
+134             <span class="comment">// If there&#39;s nothing in the alley, don&#39;t display a blank table.</span>
+135             
+136             <span class="comment">// Let the user know what we&#39;re doing</span>
+137             System.<span class="ST2">out</span>.println(<span class="character">&quot;</span><span class="character">Alley contents:</span><span class="character">&quot;</span>);
+138             
+139             <span class="comment">// Invoke alley&#39;s display method to make it look good.</span>
+140             <span class="ST1">alley</span>.display();
+141         }
+142         <span class="keyword-directive">if</span> (!<span class="ST1">driveway</span>.isEmpty()) {
+143             <span class="comment">// If there&#39;s nothing in the driveway, don&#39;t display a blank table.</span>
+144             
+145             <span class="comment">// Let the user know what we&#39;re doing</span>
+146             System.<span class="ST2">out</span>.println(<span class="character">&quot;</span><span class="character">Driveway contents:</span><span class="character">&quot;</span>);
+147             
+148             <span class="comment">// Invoke driveway&#39;s display method to make it look good.</span>
+149             <span class="ST1">driveway</span>.display();
+150         }
+151     }
+152     
+153     
+154     <span class="keyword-directive">public</span> <span class="keyword-directive">void</span> <span class="ST0">movingOver</span>() {
+155         <span class="comment">// Method that moves cars from the driveway to the alley if there&#39;s room</span>
+156         <span class="comment">// No input, console output (if a move is made)</span>
+157         car tempCar;   <span class="comment">// car to temporarily hold the one we&#39;re moving.</span>
+158         <span class="keyword-directive">int</span> size;      <span class="comment">// counter variable</span>
+159         
+160         <span class="keyword-directive">for</span>(size = <span class="ST1">alley</span>.size(); size &lt; 6; size++) {
+161             <span class="comment">// Loop until the alley size is 6</span>
+162             
+163             <span class="keyword-directive">if</span> (<span class="ST1">driveway</span>.size() &gt; 0) {
+164                 <span class="comment">// If there&#39;s stuff in the driveway...</span>
+165                 
+166                 <span class="comment">// ... take it off the top ...</span>
+167                 tempCar = <span class="ST1">driveway</span>.pop();
+168                 
+169                 <span class="comment">// ... then let the user know what we&#39;re doing ...</span>
+170                 System.<span class="ST2">out</span>.println(<span class="character">&quot;</span><span class="character">Moving #</span><span class="character">&quot;</span> + tempCar.getTag() + 
+171                         <span class="character">&quot;</span><span class="character"> to the alley.</span><span class="character">&quot;</span>);
+172                 
+173                 <span class="comment">// ... then move it into the alley.</span>
+174                 <span class="ST1">alley</span>.insert(tempCar);
+175             }
+176         }
+177     }
+178     
+179     
+180     <span class="keyword-directive">public</span> <span class="keyword-directive">void</span> <span class="ST0">ending</span>() {
+181         <span class="comment">// Method to display the final configuration of the alley and driveway</span>
+182         <span class="comment">// No input, console output.  </span>
+183         
+184         <span class="comment">// Let the user know that this is the final configuration.</span>
+185         System.<span class="ST2">out</span>.println(<span class="character">&quot;</span><span class="ST3">\n</span><span class="ST3">\n</span><span class="character">Final configuration:</span><span class="character">&quot;</span>);
+186         
+187         <span class="comment">// Invoke the displayCars method for pretty display.</span>
+188         displayCars();
+189     }
+190 
+191     
+192     <span class="keyword-directive">public</span> <span class="keyword-directive">static</span> <span class="keyword-directive">void</span> <span class="ST4">main</span>(String[] args) {
+193         <span class="comment">// Main method</span>
+194         <span class="comment">// Controls the timing loop and other nuances.  </span>
+195         <span class="comment">// argv input, console output.</span>
+196         
+197         <span class="keyword-directive">int</span> nextLicence;    <span class="comment">// The next licence plate we&#39;ll use.</span>
+198         <span class="keyword-directive">int</span> time;           <span class="comment">// The time counter for the loop</span>
+199         Assignment6 acc;    <span class="comment">// Class variable for the above methods.</span>
+200         
+201         <span class="comment">// Intitialize the variables</span>
+202         nextLicence = 10000;
+203         acc = <span class="keyword-directive">new</span> Assignment6();
+204         
+205         <span class="comment">// Timing loop</span>
+206         <span class="keyword-directive">for</span> (time = 0; time &lt; 50; time++) {
+207             <span class="comment">// Loop through until we&#39;ve seen 49 minutes.</span>
+208             
+209             <span class="comment">// Let the user know where we are in the loop</span>
+210             System.<span class="ST2">out</span>.println(<span class="character">&quot;</span><span class="ST3">\n</span><span class="ST3">\n</span><span class="character">Minute: </span><span class="character">&quot;</span> + time);
+211             
+212             <span class="keyword-directive">if</span> (time %2 == 1) {
+213                 <span class="comment">// If we&#39;re on an odd time...</span>
+214                 
+215                 <span class="comment">// ... let&#39;s add a car...</span>
+216                 acc.addCar(Integer.<span class="ST5">toString</span>(nextLicence));
+217                 
+218                 <span class="comment">// ... and increment the next licence by 10.</span>
+219                 nextLicence = nextLicence + 10;
+220             }
+221             <span class="keyword-directive">if</span> (time %5 == 0 &amp;&amp; time != 0) {
+222                 <span class="comment">// If we&#39;re on a time divisable by 5 and that time is not 0...</span>
+223                 
+224                 <span class="comment">// ... run the remove method.</span>
+225                 acc.removeCar();
+226             }
+227             
+228             <span class="comment">// See if we can move any cars over.</span>
+229             acc.movingOver();
+230         }
+231         
+232         <span class="comment">// Invoke the ending method, which will display the final results.</span>
+233         acc.ending();
+234     }
+235 }
+236 
+</pre></body>
+</html>

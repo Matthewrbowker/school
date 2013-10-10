@@ -1,0 +1,257 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+<title>BSTree.java</title>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<style type="text/css">
+<!--
+body {color: #000000; background-color: #ffffff; font-family: Monospaced}
+pre {color: #000000; background-color: #ffffff; font-family: Monospaced}
+table {color: #000000; background-color: #e9e8e2; font-family: Monospaced}
+.ST3 {font-family: Monospaced; font-style: italic}
+.ST0 {font-family: Monospaced; font-weight: bold}
+.comment {color: #969696}
+.ST2 {color: #ce7b00; font-family: Monospaced; font-weight: bold}
+.ST1 {color: #009900}
+.character {color: #ce7b00}
+.ST4 {color: #009900; font-family: Monospaced; font-style: italic}
+.keyword-directive {color: #0000e6}
+-->
+</style>
+</head>
+<body>
+<table width="100%"><tr><td align="center">/Users/matthewrbowker/Documents/School/DSA/Assignments/Assignment 7/Assignment 7/src/BSTree.java</td></tr></table>
+<pre>
+  1 <span class="comment">/*</span>
+  2 <span class="comment"> * Matthew Bowker</span>
+  3 <span class="comment"> * CS 1450-002</span>
+  4 <span class="comment"> * Assignment #7</span>
+  5 <span class="comment"> * Class for controlling a Binary Search Tree</span>
+  6 <span class="comment"> */</span>
+  7 
+  8 <span class="keyword-directive">public</span> <span class="keyword-directive">class</span> <span class="ST0">BSTree</span> {
+  9     BTNode <span class="ST1">root</span>;    <span class="comment">// The root node of the tree, our functions are based off it</span>
+ 10     String <span class="ST1">buffer</span>;  <span class="comment">// Buffer text for the output.</span>
+ 11     <span class="keyword-directive">int</span> <span class="ST1">counter</span>;    <span class="comment">// Counter for the output.</span>
+ 12     
+ 13     
+ 14     <span class="keyword-directive">public</span> <span class="ST0">BSTree</span>() {
+ 15         <span class="comment">// Constructor - sets variables</span>
+ 16         <span class="comment">// No input.</span>
+ 17         
+ 18         <span class="comment">// Create a root node.</span>
+ 19         <span class="ST1">root</span> = <span class="keyword-directive">null</span>;
+ 20         
+ 21         <span class="comment">// Create the buffer, and add the top line.  </span>
+ 22         <span class="ST1">buffer</span> = <span class="character">&quot;</span><span class="character">|</span><span class="character">&quot;</span>;
+ 23         <span class="keyword-directive">while</span> (<span class="ST1">counter</span> &lt; 67) {
+ 24             <span class="comment">// Rather than trying to create a string with 67 &quot;-&quot;, it was easier</span>
+ 25             <span class="comment">// to put it in a loop.</span>
+ 26             <span class="ST1">buffer</span> = <span class="ST1">buffer</span> + <span class="character">&quot;</span><span class="character">-</span><span class="character">&quot;</span>;
+ 27             <span class="ST1">counter</span>++;
+ 28         }
+ 29         <span class="ST1">buffer</span> = <span class="ST1">buffer</span> + <span class="character">&quot;</span><span class="character">|</span><span class="ST2">\n</span><span class="character">|</span><span class="character">&quot;</span>;
+ 30         
+ 31         <span class="comment">// Reset the counter for future use.</span>
+ 32         <span class="ST1">counter</span> = 0;
+ 33     }
+ 34     
+ 35     
+ 36     <span class="keyword-directive">public</span> BTNode <span class="ST0">insert</span>(String newWord, <span class="keyword-directive">boolean</span> lowerCase) {
+ 37         <span class="comment">// Function that inserts a node into the tree.</span>
+ 38         
+ 39         BTNode returnValue;  <span class="comment">// Pointer to the return value of the node we just</span>
+ 40                              <span class="comment">// added.</span>
+ 41         
+ 42         <span class="keyword-directive">if</span> (lowerCase) {
+ 43             <span class="comment">// If the function calls for a lower-case letter, make it lower case</span>
+ 44             newWord = newWord.toLowerCase();
+ 45         }
+ 46         
+ 47         <span class="keyword-directive">if</span> (<span class="ST1">root</span> == <span class="keyword-directive">null</span>) {
+ 48             <span class="comment">// If the root is null, we&#39;ll just make this the first root.</span>
+ 49             <span class="ST1">root</span> = <span class="keyword-directive">new</span> BTNode(newWord);
+ 50             
+ 51             <span class="comment">// Set the return value.</span>
+ 52             returnValue = <span class="ST1">root</span>;
+ 53         
+ 54         }
+ 55         <span class="keyword-directive">else</span> {
+ 56             <span class="comment">// Call the recersive insert function to insert the node.</span>
+ 57             returnValue = insertR(<span class="ST1">root</span>, newWord);
+ 58         }
+ 59         
+ 60         <span class="comment">// Return the value.</span>
+ 61         <span class="keyword-directive">return</span> returnValue;
+ 62     }
+ 63     
+ 64     
+ 65     <span class="keyword-directive">public</span> BTNode <span class="ST0">insertR</span>(BTNode n, String value) {
+ 66         <span class="comment">// Recersive insert function - goes through the nodes until it finds the</span>
+ 67         <span class="comment">// likely spot to insert the new node.</span>
+ 68         <span class="comment">// BTNode, String input, BTNode output. </span>
+ 69         
+ 70         BTNode returnValue = <span class="keyword-directive">null</span>;  <span class="comment">// The return value we&#39;re giving back to</span>
+ 71                                     <span class="comment">// the caller.</span>
+ 72         
+ 73         <span class="keyword-directive">if</span> (value.compareTo(n.<span class="ST1">nodeData</span>) &lt; 0) {
+ 74             <span class="comment">// If the word is less than the node we&#39;re currently raversing, </span>
+ 75             <span class="comment">// the function moves left.</span>
+ 76             
+ 77             <span class="keyword-directive">if</span> (n.<span class="ST1">left</span> == <span class="keyword-directive">null</span>) {
+ 78                 <span class="comment">// If the left pointer is undefined, let&#39;s add our value!</span>
+ 79                 n.<span class="ST1">left</span> = <span class="keyword-directive">new</span> BTNode(value);
+ 80                 
+ 81                 <span class="comment">// Set the return value</span>
+ 82                 returnValue = n.<span class="ST1">left</span>;
+ 83             }
+ 84             <span class="keyword-directive">else</span> {
+ 85                 <span class="comment">// Run the recersive insert function, checking to the left.</span>
+ 86                 insertR(n.<span class="ST1">left</span>, value);
+ 87             }
+ 88             
+ 89         }
+ 90         <span class="keyword-directive">else</span> <span class="keyword-directive">if</span> (value.compareTo(n.<span class="ST1">nodeData</span>) &gt; 0) {
+ 91             <span class="comment">// If the word is greater than the node we&#39;re currently traversing,</span>
+ 92             <span class="comment">// the function moves right.</span>
+ 93             
+ 94             <span class="keyword-directive">if</span> (n.<span class="ST1">right</span> == <span class="keyword-directive">null</span>) {
+ 95                 <span class="comment">// If the right pointer is undefined, let&#39;s add our value.</span>
+ 96                 n.<span class="ST1">right</span> = <span class="keyword-directive">new</span> BTNode(value);
+ 97                 
+ 98                 <span class="comment">// Set the return value.</span>
+ 99                 returnValue = n.<span class="ST1">right</span>;
+100             }
+101             <span class="keyword-directive">else</span> {
+102                 <span class="comment">// Run the recersive insert function, checking to the right.</span>
+103                 insertR(n.<span class="ST1">right</span>, value);
+104             }
+105         }
+106         <span class="keyword-directive">else</span> {
+107             <span class="comment">// The values match, increment the current node.</span>
+108             n.increment();
+109             
+110             <span class="comment">// Set the return value.</span>
+111             returnValue = n;
+112         }
+113         
+114         <span class="comment">// Return the return value.</span>
+115         <span class="keyword-directive">return</span> returnValue;
+116     }
+117     
+118     
+119     <span class="keyword-directive">public</span> <span class="keyword-directive">void</span> <span class="ST0">visit</span>(BTNode n) {
+120         <span class="comment">// Function to add to our buffer.</span>
+121         <span class="comment">// BTNode input, ouput added to the &quot;buffer&quot; varaible</span>
+122         
+123         String tempNumber;    <span class="comment">// The number we&#39;re adding to the string.</span>
+124         String tempText;      <span class="comment">// The text we&#39;re adding to the string.</span>
+125         
+126         <span class="comment">// Set the value of tempText to the node&#39;s data.</span>
+127         tempText = n.<span class="ST1">nodeData</span>;
+128         
+129         <span class="comment">// Trim the string if it&#39;s greater than 10 characters.</span>
+130         tempText = tempText.substring(0, Math.<span class="ST3">min</span>(tempText.length(), 10));
+131         
+132         <span class="keyword-directive">while</span>(tempText.length() &lt; 11) {
+133             <span class="comment">// Add spaces if it&#39;s less than 10 characters</span>
+134             tempText = tempText + <span class="character">&quot;</span> <span class="character">&quot;</span>;
+135         }
+136         
+137         <span class="comment">// Set the value of tempNumber to the node&#39;s data, and covert to string.</span>
+138         tempNumber = Integer.<span class="ST3">toString</span>(n.<span class="ST1">nodeCount</span>);
+139         
+140         <span class="keyword-directive">while</span>(tempNumber.length() &lt; 4) {
+141             <span class="comment">// Add zeros if the number is less than 3 characters.</span>
+142             tempNumber = <span class="character">&quot;</span><span class="character">0</span><span class="character">&quot;</span> + tempNumber;
+143         }
+144         
+145         <span class="comment">// Write the output to the buffer.</span>
+146         <span class="ST1">buffer</span> = <span class="ST1">buffer</span> + tempText;
+147         <span class="ST1">buffer</span> = <span class="ST1">buffer</span> + <span class="character">&quot;</span> <span class="character">&quot;</span>;
+148         
+149         <span class="ST1">buffer</span> = <span class="ST1">buffer</span> + tempNumber;
+150         <span class="ST1">buffer</span> = <span class="ST1">buffer</span> + <span class="character">&quot;</span><span class="character">|</span><span class="character">&quot;</span>;
+151         
+152         <span class="comment">// Increment the counter</span>
+153         <span class="ST1">counter</span>++;
+154         
+155         <span class="keyword-directive">if</span> (<span class="ST1">counter</span> &gt; 3) {
+156             <span class="comment">// If the counter is greater than 3, add a line break to our script.</span>
+157             <span class="ST1">buffer</span> = <span class="ST1">buffer</span> + <span class="character">&quot;</span><span class="ST2">\n</span><span class="character">&quot;</span>;
+158             <span class="ST1">buffer</span> = <span class="ST1">buffer</span> + <span class="character">&quot;</span><span class="character">|</span><span class="character">&quot;</span>;
+159             
+160             <span class="comment">// Reset the counter.</span>
+161             <span class="ST1">counter</span> = 0;
+162         }
+163         
+164     }
+165     
+166     
+167     <span class="keyword-directive">public</span> <span class="keyword-directive">void</span> <span class="ST0">traverse</span>(BTNode n) {
+168         <span class="comment">// Recersive function, checks through the nodes and adds them to the </span>
+169         <span class="comment">// output using visit().</span>
+170         <span class="comment">// BTNode input, no output.  </span>
+171         <span class="keyword-directive">if</span> (n != <span class="keyword-directive">null</span>) {
+172             visit(n);
+173             traverse(n.<span class="ST1">left</span>);
+174             traverse(n.<span class="ST1">right</span>);
+175         }
+176     }
+177     
+178     
+179     <span class="keyword-directive">public</span> <span class="keyword-directive">void</span> <span class="ST0">Display</span>() {
+180         <span class="comment">// Function to display the contents of the nodes.</span>
+181         <span class="comment">// No input, output to console.</span>
+182         
+183         <span class="comment">// Begin the recursive traversal.</span>
+184         traverse(<span class="ST1">root</span>);
+185         
+186         <span class="comment">// Reset the counter.</span>
+187         <span class="ST1">counter</span> = 0;
+188         
+189         <span class="keyword-directive">while</span> (<span class="ST1">counter</span> &lt; 67) {
+190             <span class="comment">// Add the lines again.</span>
+191             <span class="ST1">buffer</span> = <span class="ST1">buffer</span> + <span class="character">&quot;</span><span class="character">-</span><span class="character">&quot;</span>;
+192             <span class="ST1">counter</span>++;
+193         }
+194         
+195         <span class="comment">// Reset the counter</span>
+196         <span class="ST1">counter</span> = 0;
+197         
+198         <span class="comment">// Add one more line to the buffer, to make things even.</span>
+199         <span class="ST1">buffer</span> = <span class="ST1">buffer</span> + <span class="character">&quot;</span><span class="character">|</span><span class="character">&quot;</span>;
+200         
+201         <span class="comment">// Output the buffer to the console.</span>
+202         System.<span class="ST4">out</span>.println(<span class="ST1">buffer</span>);
+203         
+204         <span class="comment">// Output the word count to the console.</span>
+205         System.<span class="ST4">out</span>.println(<span class="character">&quot;</span><span class="character">There are </span><span class="character">&quot;</span> + wordCount(<span class="ST1">root</span>) + <span class="character">&quot;</span><span class="character"> words in</span><span class="character">&quot;</span>
+206                 + <span class="character">&quot;</span><span class="character"> the tree</span><span class="character">&quot;</span>);
+207     }
+208     
+209     
+210     <span class="keyword-directive">public</span> <span class="keyword-directive">int</span> <span class="ST0">wordCount</span>(BTNode n) {
+211         <span class="comment">// Function that counts the number of words.</span>
+212         <span class="comment">// BTNode input, int output.  Recursive function.</span>
+213         
+214         <span class="keyword-directive">int</span> count;   <span class="comment">// Variable that holds the number of words.</span>
+215         
+216         <span class="comment">// Set the counter variable.</span>
+217         count = 0;
+218         
+219         <span class="keyword-directive">if</span> (n!= <span class="keyword-directive">null</span>) {
+220             <span class="comment">// If n is not null, add the count and recurse.</span>
+221             
+222             count = count + n.<span class="ST1">nodeCount</span>;
+223             count = count + wordCount(n.<span class="ST1">left</span>);
+224             count = count + wordCount(n.<span class="ST1">right</span>);
+225         }
+226         
+227         <span class="comment">// Return the count.</span>
+228         <span class="keyword-directive">return</span> count;
+229     }
+230 }
+231 
+</pre></body>
+</html>

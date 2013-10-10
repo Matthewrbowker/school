@@ -1,0 +1,59 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+<title>BST.java</title>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<style type="text/css">
+<!--
+body {color: #000000; background-color: #ffffff; font-family: Monospaced}
+pre {color: #000000; background-color: #ffffff; font-family: Monospaced}
+table {color: #000000; background-color: #e9e8e2; font-family: Monospaced}
+.ST1 {font-family: Monospaced; font-weight: bold; font-style: italic}
+.ST0 {font-family: Monospaced; font-weight: bold}
+.comment {color: #969696}
+.character {color: #ce7b00}
+.keyword-directive {color: #0000e6}
+-->
+</style>
+</head>
+<body>
+<table width="100%"><tr><td align="center">/Users/matthewrbowker/Documents/School/DSA/Assignments/Assignment 7/Assignment 7/src/BST.java</td></tr></table>
+<pre>
+ 1 <span class="comment">/*</span>
+ 2 <span class="comment"> * Matthew Bowker</span>
+ 3 <span class="comment"> * CS 1450-002</span>
+ 4 <span class="comment"> * Assignment #7</span>
+ 5 <span class="comment"> * Class for adding words to a Binary Search Tree</span>
+ 6 <span class="comment"> * </span>
+ 7 <span class="comment"> * This class uses wordfind.TextReader, provided and copyright Al Brouillette.</span>
+ 8 <span class="comment"> * Used with permission.</span>
+ 9 <span class="comment"> */</span>
+10 
+11 <span class="keyword-directive">public</span> <span class="keyword-directive">class</span> <span class="ST0">BST</span> {
+12 
+13     <span class="keyword-directive">public</span> <span class="keyword-directive">static</span> <span class="keyword-directive">void</span> <span class="ST1">main</span>(String[] args) {
+14         BSTree tree;           <span class="comment">// The Binary Search Tree we&#39;ll be using</span>
+15         TextReader reader;     <span class="comment">// The TextReader class, provided by Al.</span>
+16         String nextWord;       <span class="comment">// The next word we&#39;re adding to the BST</span>
+17         
+18         <span class="comment">// Intitialize the tree and the text reader.</span>
+19         tree = <span class="keyword-directive">new</span> BSTree();
+20         reader = <span class="keyword-directive">new</span> TextReader(<span class="character">&quot;</span><span class="character">/Users/matthewrbowker/</span><span class="character">&quot;</span>
+21                 + <span class="character">&quot;</span><span class="character">Documents/School/DSA/Assignments/Assignment 7/Data.as7</span><span class="character">&quot;</span>);
+22         
+23         <span class="comment">// Read the first word of the file</span>
+24         nextWord = reader.GetWord();
+25         
+26         <span class="comment">// Loop through the file, reading the other words.</span>
+27         <span class="keyword-directive">while</span> (nextWord != <span class="keyword-directive">null</span>) {
+28             tree.insert(nextWord, <span class="keyword-directive">true</span>);
+29             nextWord = reader.GetWord();
+30         }
+31         
+32         <span class="comment">// Display the tree.</span>
+33         tree.Display();
+34     }
+35 }
+36 
+</pre></body>
+</html>
