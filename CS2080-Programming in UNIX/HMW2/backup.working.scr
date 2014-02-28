@@ -1,0 +1,40 @@
+#!/bin/tcsh
+
+#AUTHOR: Matthew Bowker
+#NAME: backup.scr
+#TASK: A script that backs up a list of files to a chosen directory
+#DATE DUE: 28 October 2013
+#DESCRIPTION: This program backs up a specific list of files provided as $argv[1] and stores them in a directory provided by $argv[2]
+#
+#EXIT VALUES
+#                       0        If successfully completed
+#                      10        Incorrect number of arguments
+#                      20        Incorrect terminal
+
+if ($#argv != 2) then
+echo "Need two params";
+exit 10;
+endif
+
+if (! -e $argv[1]) then
+echo "$argv[1] is not a valid file";
+exit 30;
+endif
+
+if (! -d $argv[2]) then
+	echo "$argv[2] is not a directory!";
+	exit 20;
+else
+	echo "$argv[2] is a directory!  We can proceed!";
+	endif
+
+foreach line ("`cat $argv[1]`")
+	if (-e $line) then
+		echo "Moving $line to $argv[2]/$line.bak";
+		cp $line $argv[2]/$line.bak;
+	else
+		echo "File $line not found!";
+		endif
+	end;
+
+exit 0;
