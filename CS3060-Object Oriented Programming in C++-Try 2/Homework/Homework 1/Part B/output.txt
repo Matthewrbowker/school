@@ -1,0 +1,79 @@
+Matthew Bowker; CS3060-001; Assignment #1 Problem 3.16 Output
+
+cd /; /Applications/Qt/Qt\ Creator.app/Contents/MacOS/../Resources/qtcreator_process_stub run /var/folders/90/2pt8ybrn18bct15l9c1f6cmr0000gn/T/QtCreator.wJ1346/stub-socket Press\ \<RETURN\>\ to\ close\ this\ window... /Users/Matthew/Documents/School/CPP/Homework/Homework\ 1/Part\ B/build-HMW1_b-Desktop_Qt_5_2_1_clang_64bit-Debug /var/folders/90/2pt8ybrn18bct15l9c1f6cmr0000gn/T/QtCreator.LG1346 /Users/Matthew/Documents/School/CPP/Homework/Homework\ 1/Part\ B/build-HMW1_b-Desktop_Qt_5_2_1_clang_64bit-Debug/HMW1_b
+Last login: Mon May 12 17:02:51 on console
+-bash: Desktop: command not found
+Matthews-MacBook-Pro:~ Matthew$ cd /; /Applications/Qt/Qt\ Creator.app/Contents/MacOS/../Resources/qtcreator_process_stub run /var/folders/90/2pt8ybrn18bct15l9c1f6cmr0000gn/T/QtCreator.wJ1346/stub-socket Press\ \<RETURN\>\ to\ close\ this\ window... /Users/Matthew/Documents/School/CPP/Homework/Homework\ 1/Part\ B/build-HMW1_b-Desktop_Qt_5_2_1_clang_64bit-Debug /var/folders/90/2pt8ybrn18bct15l9c1f6cmr0000gn/T/QtCreator.LG1346 /Users/Matthew/Documents/School/CPP/Homework/Homework\ 1/Part\ B/build-HMW1_b-Desktop_Qt_5_2_1_clang_64bit-Debug/HMW1_b
+Welcome to the Heart Rate Calculator program
+Please enter the Patient's first name: Matthew
+Please enter the Patient's last name: Bowker
+Please enter the Patent's month of birth in numbers: 7
+Please enter the Patent's day of birth in numbers: 25
+Please enter the Patent's year of birth in numbers: 1993
+Please enter the current month in numbers: 5
+Please enter the current day in numbers: 12
+Please enter the current year in numbers: 2014
+Generating report....
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+--------------------------------
+|   Patient HeartRate Report   |
+|    Dr. Albert Broullette     |
+--------------------------------
+Patient Name: Bowker, Matthew
+Patient Date of Birth: 7/25/1993
+--------------------------------
+Maximum Heart Rate: 199
+--------------------------------
+Target Heart Rate: 99 - 169
+--------------------------------
+Report generated on: 5/12/2014
+Press <RETURN> to close this window...
+

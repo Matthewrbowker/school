@@ -1,0 +1,76 @@
+Matthew Bowker; CS3060-001; Assignment #1 Problem 4.36 encryption Output
+
+-----------
+| Run #1: |
+-----------
+
+Last login: Sun May  4 17:18:26 on ttys000
+/Users/Matthew/Documents/School/CPP/Homework/Homework\ 1/Part\ C/build-HMW1_c-encrypt-Desktop_Qt_5_2_1_clang_64bit-Debug/HMW1_c-encrypt ; exit;
+-bash: Desktop: command not found
+Matthews-MacBook-Pro:~ Matthew$ /Users/Matthew/Documents/School/CPP/Homework/Homework\ 1/Part\ C/build-HMW1_c-encrypt-Desktop_Qt_5_2_1_clang_64bit-Debug/HMW1_c-encrypt ; exit;
+Welcome to the encryption program!
+Enter the number to encrypt here: 2871
+Here is your encrypted number: 4895
+logout
+
+[Process completed]
+
+
+-----------
+| Run #2: |
+-----------
+
+Last login: Sun May  4 17:20:23 on ttys000
+-bash: Desktop: command not found
+Matthews-MacBook-Pro:~ Matthew$ /Users/Matthew/Documents/School/CPP/Homework/Homework\ 1/Part\ C/build-HMW1_c-encrypt-Desktop_Qt_5_2_1_clang_64bit-Debug/HMW1_c-encrypt ; exit;
+Welcome to the encryption program!
+Enter the number to encrypt here: 7798
+Here is your encrypted number: 6544
+logout
+
+[Process completed]
+
+
+-----------
+| Run #3: |
+-----------
+
+Last login: Sun May  4 17:20:52 on ttys000
+-bash: Desktop: command not found
+Matthews-MacBook-Pro:~ Matthew$ /Users/Matthew/Documents/School/CPP/Homework/Homework\ 1/Part\ C/build-HMW1_c-encrypt-Desktop_Qt_5_2_1_clang_64bit-Debug/HMW1_c-encrypt ; exit;
+Welcome to the encryption program!
+Enter the number to encrypt here: 999
+That's not a number that I can process!
+logout
+
+[Process completed]
+
+
+-----------
+| Run #4: |
+-----------
+
+Last login: Sun May  4 17:21:13 on ttys000
+-bash: Desktop: command not found
+Matthews-MacBook-Pro:~ Matthew$ /Users/Matthew/Documents/School/CPP/Homework/Homework\ 1/Part\ C/build-HMW1_c-encrypt-Desktop_Qt_5_2_1_clang_64bit-Debug/HMW1_c-encrypt ; exit;
+Welcome to the encryption program!
+Enter the number to encrypt here: 10001
+That's not a number that I can process!
+logout
+
+[Process completed]
+
+
+-----------
+| Run #5: |
+-----------
+
+Last login: Sun May  4 17:21:47 on ttys000
+-bash: Desktop: command not found
+Matthews-MacBook-Pro:~ Matthew$ /Users/Matthew/Documents/School/CPP/Homework/Homework\ 1/Part\ C/build-HMW1_c-encrypt-Desktop_Qt_5_2_1_clang_64bit-Debug/HMW1_c-encrypt ; exit;
+Welcome to the encryption program!
+Enter the number to encrypt here: 6866
+Here is your encrypted number: 3335
+logout
+
+[Process completed]

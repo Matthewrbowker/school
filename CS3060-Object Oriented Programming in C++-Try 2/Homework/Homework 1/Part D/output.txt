@@ -1,0 +1,101 @@
+Matthew Bowker; CS3060-001; Assignment #1 Problem 5.24 Output
+
+-----------
+| Run #1: |
+-----------
+
+Last login: Mon May 12 23:43:13 on ttys000
+-bash: Desktop: command not found
+Matthews-MacBook-Pro:~ Matthew$ cd /; /Applications/Qt/Qt\ Creator.app/Contents/MacOS/../Resources/qtcreator_process_stub run /var/folders/90/2pt8ybrn18bct15l9c1f6cmr0000gn/T/QtCreator.xs1346/stub-socket Press\ \<RETURN\>\ to\ close\ this\ window... /Users/Matthew/Documents/School/CPP/Homework/Homework\ 1/Part\ D/build-HMW1_d-Desktop_Qt_5_2_1_clang_64bit-Debug /var/folders/90/2pt8ybrn18bct15l9c1f6cmr0000gn/T/QtCreator.Th1346 /Users/Matthew/Documents/School/CPP/Homework/Homework\ 1/Part\ D/build-HMW1_d-Desktop_Qt_5_2_1_clang_64bit-Debug/HMW1_d
+Please enter the number of rows of stars you would like (between 1 and 19, odd numbers only): 13
+         *         
+        ***        
+       *****       
+      *******      
+     *********     
+    ***********    
+   *************   
+    ***********    
+     *********     
+      *******      
+       *****       
+        ***        
+         *         
+Press <RETURN> to close this window...
+
+
+
+-----------
+| Run #2: |
+-----------
+
+Last login: Mon May 12 23:47:33 on ttys000
+-bash: Desktop: command not found
+Matthews-MacBook-Pro:~ Matthew$ /Users/Matthew/Documents/School/CPP/Homework/Homework\ 1/Part\ D/build-HMW1_d-Desktop_Qt_5_2_1_clang_64bit-Debug/HMW1_d ; exit;
+Please enter the number of rows of stars you would like (between 1 and 19, odd numbers only): 3
+         *         
+        ***        
+         *         
+logout
+
+[Process completed]
+
+
+-----------
+| Run #3: |
+-----------
+
+Last login: Mon May 12 23:47:40 on ttys000
+-bash: Desktop: command not found
+Matthews-MacBook-Pro:~ Matthew$ /Users/Matthew/Documents/School/CPP/Homework/Homework\ 1/Part\ D/build-HMW1_d-Desktop_Qt_5_2_1_clang_64bit-Debug/HMW1_d ; exit;
+Please enter the number of rows of stars you would like (between 1 and 19, odd numbers only): 19
+         *         
+        ***        
+       *****       
+      *******      
+     *********     
+    ***********    
+   *************   
+  ***************  
+ ***************** 
+*******************
+ ***************** 
+  ***************  
+   *************   
+    ***********    
+     *********     
+      *******      
+       *****       
+        ***        
+         *         
+logout
+
+[Process completed]
+
+
+-----------
+| Run #4: |
+-----------
+
+Last login: Mon May 12 23:47:58 on ttys000
+-bash: Desktop: command not found
+Matthews-MacBook-Pro:~ Matthew$ /Users/Matthew/Documents/School/CPP/Homework/Homework\ 1/Part\ D/build-HMW1_d-Desktop_Qt_5_2_1_clang_64bit-Debug/HMW1_d ; exit;
+Please enter the number of rows of stars you would like (between 1 and 19, odd numbers only): 21
+Sorry, that number won't work for me. 
+logout
+
+[Process completed]
+
+
+-----------
+| Run #5: |
+-----------
+
+Last login: Mon May 12 23:48:11 on ttys000
+-bash: Desktop: command not found
+Matthews-MacBook-Pro:~ Matthew$ /Users/Matthew/Documents/School/CPP/Homework/Homework\ 1/Part\ D/build-HMW1_d-Desktop_Qt_5_2_1_clang_64bit-Debug/HMW1_d ; exit;
+Please enter the number of rows of stars you would like (between 1 and 19, odd numbers only): 1
+         *         
+logout
+
+[Process completed]

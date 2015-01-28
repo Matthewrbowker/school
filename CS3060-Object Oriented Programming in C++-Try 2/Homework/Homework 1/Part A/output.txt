@@ -1,0 +1,81 @@
+Matthew Bowker; CS3060-001; Assignment #1 Problem 2.28 Output
+
+-----------
+| Run #1: |
+-----------
+
+Last login: Mon Apr 28 15:37:01 on ttys000
+/Users/Matthew/Documents/School/CPP/Homework/Homework\ 1/Part\ A/build-HMW1_a-Desktop_Qt_5_2_1_clang_64bit-Release/HMW1_a ; exit;
+-bash: Desktop: command not found
+macbookpro-8810:~ Matthew$ /Users/Matthew/Documents/School/CPP/Homework/Homework\ 1/Part\ A/build-HMW1_a-Desktop_Qt_5_2_1_clang_64bit-Release/HMW1_a ; exit;
+Hello, and welcome to the Integer splitting application.
+Please enter a five-digit integer
+79332
+7   9   3   3   2
+logout
+
+[Process completed]
+
+
+-----------
+| Run #2: |
+-----------
+
+Last login: Mon Apr 28 15:37:46 on ttys000
+-bash: Desktop: command not found
+macbookpro-8810:~ Matthew$ /Users/Matthew/Documents/School/CPP/Homework/Homework\ 1/Part\ A/build-HMW1_a-Desktop_Qt_5_2_1_clang_64bit-Release/HMW1_a ; exit;
+Hello, and welcome to the Integer splitting application.
+Please enter a five-digit integer
+12345
+1   2   3   4   5
+logout
+
+[Process completed]
+
+
+-----------
+| Run #3: |
+-----------
+
+Last login: Mon Apr 28 15:39:58 on ttys000
+-bash: Desktop: command not found
+macbookpro-8810:~ Matthew$ /Users/Matthew/Documents/School/CPP/Homework/Homework\ 1/Part\ A/build-HMW1_a-Desktop_Qt_5_2_1_clang_64bit-Release/HMW1_a ; exit;
+Hello, and welcome to the Integer splitting application.
+Please enter a five-digit integer
+9999
+That's not a number that I can process!
+logout
+
+[Process completed]
+
+
+-----------
+| Run #4: |
+-----------
+
+Last login: Mon Apr 28 15:41:00 on ttys000
+-bash: Desktop: command not found
+macbookpro-8810:~ Matthew$ cd /; /Applications/Qt/Qt\ Creator.app/Contents/MacOS/../Resources/qtcreator_process_stub run /var/folders/90/2pt8ybrn18bct15l9c1f6cmr0000gn/T/QtCreator.mF3826/stub-socket Press\ \<RETURN\>\ to\ close\ this\ window... /Users/Matthew/Documents/School/CPP/Homework/Homework\ 1/Part\ A/build-HMW1_a-Desktop_Qt_5_2_1_clang_64bit-Release /var/folders/90/2pt8ybrn18bct15l9c1f6cmr0000gn/T/QtCreator.fB3826 /Users/Matthew/Documents/School/CPP/Homework/Homework\ 1/Part\ A/build-HMW1_a-Desktop_Qt_5_2_1_clang_64bit-Release/HMW1_a
+Hello, and welcome to the Integer splitting application.
+Please enter a five-digit integer
+100000
+That's not a number that I can process!
+logout
+
+[Process completed]
+
+
+-----------
+| Run #5: |
+-----------
+
+Last login: Mon Apr 28 15:41:09 on ttys000
+-bash: Desktop: command not found
+macbookpro-8810:~ Matthew$ /Users/Matthew/Documents/School/CPP/Homework/Homework\ 1/Part\ A/build-HMW1_a-Desktop_Qt_5_2_1_clang_64bit-Release/HMW1_a ; exit;
+Hello, and welcome to the Integer splitting application.
+Please enter a five-digit integer
+98765
+9   8   7   6   5
+logout
+
+[Process completed]

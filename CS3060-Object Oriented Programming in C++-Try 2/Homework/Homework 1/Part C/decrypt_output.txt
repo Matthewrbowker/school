@@ -1,0 +1,74 @@
+Matthew Bowker; CS3060-001; Assignment #1 Problem 4.36 decryption Output
+
+-----------
+| Run #1: |
+-----------
+
+Last login: Sun May  4 17:22:02 on ttys000
+-bash: Desktop: command not found
+Matthews-MacBook-Pro:~ Matthew$ /Users/Matthew/Documents/School/CPP/Homework/Homework\ 1/Part\ C/build-HMW1_c-decrypt-Desktop_Qt_5_2_1_clang_64bit-Debug/HMW1_c-decrypt ; exit;
+Welcome to the decryption program!
+Enter the number to decrypt here: 4895
+Here is your encrypted number: 2871
+logout
+
+[Process completed]
+
+
+-----------
+| Run #2: |
+-----------
+
+Last login: Sun May  4 17:24:18 on ttys000
+-bash: Desktop: command not found
+Matthews-MacBook-Pro:~ Matthew$ /Users/Matthew/Documents/School/CPP/Homework/Homework\ 1/Part\ C/build-HMW1_c-decrypt-Desktop_Qt_5_2_1_clang_64bit-Debug/HMW1_c-decrypt ; exit;
+Welcome to the decryption program!
+Enter the number to decrypt here: 6544
+Here is your encrypted number: 7798
+logout
+
+[Process completed]
+
+
+-----------
+| Run #3: |
+-----------
+
+Last login: Sun May  4 17:24:59 on ttys000
+-bash: Desktop: command not found
+Matthews-MacBook-Pro:~ Matthew$ /Users/Matthew/Documents/School/CPP/Homework/Homework\ 1/Part\ C/build-HMW1_c-decrypt-Desktop_Qt_5_2_1_clang_64bit-Debug/HMW1_c-decrypt ; exit;
+Welcome to the decryption program!
+Enter the number to decrypt here: 999
+That's not a number that I can process!
+logout
+
+[Process completed]
+
+
+-----------
+| Run #4: |
+-----------
+
+Last login: Sun May  4 17:25:34 on ttys000
+-bash: Desktop: command not found
+Matthews-MacBook-Pro:~ Matthew$ /Users/Matthew/Documents/School/CPP/Homework/Homework\ 1/Part\ C/build-HMW1_c-decrypt-Desktop_Qt_5_2_1_clang_64bit-Debug/HMW1_c-decrypt ; exit;
+Welcome to the decryption program!
+Enter the number to decrypt here: 10001
+That's not a number that I can process!
+logout
+
+[Process completed]
+
+
+-----------
+| Run #5: |
+-----------
+Last login: Sun May  4 17:25:41 on ttys000
+-bash: Desktop: command not found
+Matthews-MacBook-Pro:~ Matthew$ /Users/Matthew/Documents/School/CPP/Homework/Homework\ 1/Part\ C/build-HMW1_c-decrypt-Desktop_Qt_5_2_1_clang_64bit-Debug/HMW1_c-decrypt ; exit;
+Welcome to the decryption program!
+Enter the number to decrypt here: 3335
+Here is your encrypted number: 6866
+logout
+
+[Process completed]

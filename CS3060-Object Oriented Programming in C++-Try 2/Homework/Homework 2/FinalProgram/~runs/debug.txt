@@ -1,0 +1,183 @@
+Microsoft Windows [Version 6.3.9600]
+(c) 2013 Microsoft Corporation. All rights reserved.
+
+F:\>FinalProject.exe DEBUG
+Tests executing...
+
+
+
+---------------
+| question.h |
+---------------
+test_function_generateQuestion
+------------------------------
+Level 1:
+Question 1 Generated.
+Question 2 Generated.
+Question 3 Generated.
+Question 4 Generated.
+Question 5 Generated.
+Question 6 Generated.
+Question 7 Generated.
+Question 8 Generated.
+Question 9 Generated.
+Question 10 Generated.
+Level 2:
+Question 1 Generated.
+Question 2 Generated.
+Question 3 Generated.
+Question 4 Generated.
+Question 5 Generated.
+Question 6 Generated.
+Question 7 Generated.
+Question 8 Generated.
+Question 9 Generated.
+Question 10 Generated.
+Level 3:
+Question 1 Generated.
+Question 2 Generated.
+Question 3 Generated.
+Question 4 Generated.
+Question 5 Generated.
+Question 6 Generated.
+Question 7 Generated.
+Question 8 Generated.
+Question 9 Generated.
+Question 10 Generated.
+
+
+test_function_getAnswer
+-----------------------
+Level 1:5 + 1 = 6 --- Matches!
+Level 2:12 + 8 = 20 --- Matches!
+Level 3:491 + 127 = 618 --- Matches!
+Level 1:6 - 3 = 3 --- Matches!
+Level 2:33 - 18 = 15 --- Matches!
+Level 3:799 - 83 = 716 --- Matches!
+Level 1:8 * 6 = 48 --- Matches!
+Level 2:86 * 79 = 6794 --- Matches!
+Level 3:656 * 614 = 402784 --- Matches!
+Level 1:36 / 4 = 9 (Remainder 0) --- Matches!
+Level 2:704 / 8 = 88 (Remainder 0) --- Matches!
+Level 3:1035 / 23 = 45 (Remainder 0) --- Matches!
+Level 1:5 + 2 = 7 --- Matches!
+Level 2:59 * 17 = 1003 --- Matches!
+Level 3:581 / 7 = 83 (Remainder 0) --- Matches!
+
+
+
+---------------
+| progress.h |
+---------------
+Getting values for an inactive module...
+Is the module active? 0
+Student Name:
+Number true: 0
+Number false: 0
+
+---------------------------------------------------------------------------------
+Setting values and activating module...
+
+---------------------------------------------------------------------------------
+Getting values for an active module...
+Is the module active? 1
+Student Name: Matthew Bowker
+Number true: 2
+Number false: 3
+
+
+
+---------
+| ui.h |
+---------
+Header generation
+-----------------
+Welcome to the Computer Aided Instruction System
+This software licensed to: University of Colorado Colorado Springs
+
+
+
+---------------------------------------------------------------------------------
+Main menu generation
+--------------------
+Please enter your menu choice:
+     1 - Answer questions
+     2 - View Student scores
+     0 - exit
+
+---------------------------------------------------------------------------------
+Ask student name
+----------------
+Please enter your first name: Matthew
+Please enter your last name: Bowker
+The student name entered was: Matthew Bowker
+
+---------------------------------------------------------------------------------
+Asking the level of the questions
+---------------------------------
+Please enter which level you would like to try (1-3)
+Enter your answer: 2
+
+---------------------------------------------------------------------------------
+Asking the operation
+--------------------
+Please enter the operation you would like to do:
+     1 - Addition
+     2 - Subtraction
+     3 - Multiplication
+     4 - Division
+     5 - A mixture of all four
+Enter your answer: 6
+An error has occured in the program.
+The error condition reported: That is an invalid menu choice.
+You can try that action again, but you may get the same result :(
+
+Enter your answer: 4
+
+---------------------------------------------------------------------------------
+Asking a question the first time
+--------------------------------
+10 - 5 =
+
+---------------------------------------------------------------------------------
+Asking a question the second time
+---------------------------------
+(Second attempt) 10 - 5 =
+
+---------------------------------------------------------------------------------
+Getting an answer
+-----------------
+Enter your answer: 5
+The answer entered was: 5
+
+---------------------------------------------------------------------------------
+Outputting student scores
+-------------------------
+Displaying scores for: Charlie Test
+Number correct: 3
+Number wrong: 2
+
+
+---------------------------------------------------------------------------------
+Student answered question right
+-------------------------------
+Very good!
+
+---------------------------------------------------------------------------------
+Student answered question wrong
+-------------------------------
+Wrong. Try once more.
+
+---------------------------------------------------------------------------------
+Student's choice is invalid
+---------------------------
+An error has occured in the program.
+The error condition reported: That menu choice is not valid
+You can try that action again, but you may get the same result :(
+
+
+---------------------------------------------------------------------------------
+Final Test Status (Question class): Succeeded!
+Final Test Status (Progress class): Succeeded!
+Final Test Status (UI class): Succeeded!
+Press any key to continue . . .
