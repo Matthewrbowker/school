@@ -10,7 +10,6 @@ Note: maintain your data structures efficiently!
 
 class Car
   @@count = 0
-  #@@cars = Hash.new{|h,k| h[k] = Hash.new{|hh,kk| hh[kk] = 0}};
   @@cars = Hash.new(0)
   @make = "";
   @model = "";
@@ -78,17 +77,3 @@ class Car
   end
 
 end
-
-# Main Method...
-myCar = Car.new({:make => "Honda", :model => "Civic", :year =>"1997"});
-myCar2 = Car.new({:make => "Honda", :model => "Pilot", :year =>"2003"});
-myCar3 = Car.new({:make => "Honda", :model => "Pilot", :year =>"2003"});
-myCar4 = Car.new({:make => "Honda", :model => "Pilot", :year =>"2003"});
-puts Car.getCars().to_s;
-puts Car.num_cars_made();
-puts Car.most_popular_make();
-puts Car.been_made?("Honda Civic 1997");
-puts Car.been_made?("Honda Civic 1999");
-puts Car.been_made?("0");
-
-gets;

@@ -50,3 +50,19 @@ glob_match(Array["part1.rb", "part2.rb", "part2.rb~", ".part3.rb.un~"], "*.py*")
 
 gets();
 
+# Part 4
+
+
+# Main Method...
+myCar = Car.new({:make => "Honda", :model => "Civic", :year =>"1997"});
+myCar2 = Car.new({:make => "Honda", :model => "Pilot", :year =>"2003"});
+myCar3 = Car.new({:make => "Honda", :model => "Pilot", :year =>"2003"});
+myCar4 = Car.new({:make => "Honda", :model => "Pilot", :year =>"2003"});
+puts Car.getCars().to_s;
+puts Car.num_cars_made();
+puts Car.most_popular_make();
+puts Car.been_made?("Honda Civic 1997");
+puts Car.been_made?("Honda Civic 1999");
+puts Car.been_made?("0");
+
+gets;
