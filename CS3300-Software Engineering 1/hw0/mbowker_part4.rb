@@ -24,17 +24,17 @@ class Car
 
   end
 
-  def num_cars_made
+  def self.num_cars_made
     return @@count;
   end
 
-  def most_popular_make
+  def self.most_popular_make
 
     key = @@cars.max_by{|k,v| v}
     return key[0]
   end
 
-  def been_made?(car_make)
+  def self.been_made?(car_make)
     retVal = false;
     if @@cars.key?(car_make)
       retVal = true;
@@ -43,24 +43,36 @@ class Car
   end
 
   def setMake(tempMake)
-    @@holdingMake = tempMake;
+    @make = tempMake;
   end
 
   def setModel(tempModel)
-    @@holdingModel = tempModel;
+    @model = tempModel;
   end
 
   def setYear(tempYear)
-    @@holdingYear = tempYear;
+    @year = tempYear;
   end
 
-  def getCars()
+  def getMake
+    return @make
+  end
+
+  def getModel
+    return @model
+  end
+
+  def getYear
+    return @year
+  end
+
+  def self.getCars()
     return @@cars;
   end
 
   def commitCar!()
-    @@cars["#{@@holdingMake} #{@@holdingModel} #{@@holdingYear}"] =
-        @@cars["#{@@holdingMake} #{@@holdingModel} #{@@holdingYear}"] + 1;
+    @@cars["#{@make} #{@model} #{@year}"] =
+        @@cars["#{@make} #{@model} #{@year}"] + 1;
 
     @@count = @@count + 1;
   end
@@ -69,47 +81,14 @@ end
 
 # Main Method...
 myCar = Car.new({:make => "Honda", :model => "Civic", :year =>"1997"});
-myCar.setMake("Honda");
-myCar.setModel("Pilot");
-myCar.setYear("2003");
-myCar.commitCar!;
-myCar.setMake("Honda");
-myCar.setModel("Pilot");
-myCar.setYear("2003");
-myCar.commitCar!;
-myCar.setMake("Honda");
-myCar.setModel("Pilot");
-myCar.setYear("2003");
-myCar.commitCar!;
-myCar.setMake("Honda");
-myCar.setModel("Pilot");
-myCar.setYear("2003");
-myCar.commitCar!;
-myCar.setMake("Honda");
-myCar.setModel("Pilot");
-myCar.setYear("2003");
-myCar.commitCar!;
-myCar.setMake("Honda");
-myCar.setModel("Pilot");
-myCar.setYear("2003");
-myCar.commitCar!;
-myCar.setMake("Honda");
-myCar.setModel("Pilot");
-myCar.setYear("2003");
-myCar.commitCar!;
-myCar.setMake("Honda");
-myCar.setModel("Pilot");
-myCar.setYear("2006");
-myCar.commitCar!;
-myCar.setMake("Honda");
-myCar.setModel("Pilot");
-myCar.setYear("2006");
-myCar.commitCar!;
-puts myCar.getCars().to_s;
-puts myCar.num_cars_made();
-puts myCar.most_popular_make();
-puts myCar.been_made?("Honda Civic 1997");
-puts myCar.been_made?("Honda Civic 1999");
-puts myCar.been_made?("0");
+myCar2 = Car.new({:make => "Honda", :model => "Pilot", :year =>"2003"});
+myCar3 = Car.new({:make => "Honda", :model => "Pilot", :year =>"2003"});
+myCar4 = Car.new({:make => "Honda", :model => "Pilot", :year =>"2003"});
+puts Car.getCars().to_s;
+puts Car.num_cars_made();
+puts Car.most_popular_make();
+puts Car.been_made?("Honda Civic 1997");
+puts Car.been_made?("Honda Civic 1999");
+puts Car.been_made?("0");
 
 gets;
