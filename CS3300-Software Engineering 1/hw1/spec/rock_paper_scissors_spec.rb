@@ -24,14 +24,14 @@ describe RockPaperScissors do
       should raise_error(RockPaperScissors::NoSuchStrategyError,
       "Strategy must be one of R,P,S")
   end
-  describe 'tournament', :pending => true do
+  describe 'tournament' do
     it 'base case' do
       RockPaperScissors.tournament_winner([@rock,@paper]).should == @paper
     end
     it 'recursive case' do
       tourney = [
         [
-          [ ["Armando", "P"], ["Dave", "S"] ],      
+          [ ["Armando", "P"], ["Dave", "S"] ],
           [ ["Richard", "R"], ["Michael", "S"] ]
         ],
         [
