@@ -1,20 +1,34 @@
 -#  This file is app/views/projects/index.html.haml
 %h1 All Project Tasks
 
+%div
+  = form_tag projects_path, :method => :get do
+    Include:
+    %br
+    - @all_users.each do |user|
+      = user
+      = check_box_tag "users[#{user}]", "1", @checks[user]
+      %br
+    = hidden_field_tag :sort, @sort
+    = submit_tag 'Filter'
+
+    =session.to_s;
+
 %table#projects
   %thead
     %tr
-      %th Task Title
+      %th{:class => @title}=link_to "Task Title", projects_path({:sort=>"title", :users =>@checks});
       %th Task Details
       %th Assigned User
-      %th Due Date
+      %th{:class => @date}=link_to "Due Date", projects_path({:sort=>"date", :users=>@checks});
 
   %tbody
     - @projects.each do |project|
       %tr
-        %td= project.title 
+        %td= project.title
         %td= link_to "More about #{project.title}", project_path(project)
         %td= project.user
         %td= project.due_date.to_formatted_s(:long)
 
 = link_to 'Add new project task', new_project_path
+= link_to 'Reset my session', projects_path({:unset => "true"});
